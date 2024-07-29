@@ -1,0 +1,783 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+ }
+ header{
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+     background-color: #076728;
+     border-color: black;
+     z-index: 3;
+ }
+ nav a{
+     float: right;
+     text-align: center;
+     padding: 35px;
+     text-decoration: none;
+     color: black;
+     justify-content: space-around;
+     font-size: 25px;
+ }
+ nav a:hover{
+     background-color: #033214;
+     color: white;
+ }
+ nav img{
+     float: left;
+     text-align: center;
+     padding: 15px;
+     text-decoration: none;
+     border-radius: 10px;
+     box-shadow: 10px 10px 5px #033214;
+ }
+ html{
+     scroll-behavior: smooth;
+     width: 100%;
+ }
+ .top{
+     background-image: URL('images/farm-valley.svg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 109.5%;
+     height: 49vh;
+     margin-top: 113px;
+     z-index: 2;
+     color: white;
+ }
+ .top h1{
+     font-size: 80px;
+     text-align: left;
+     margin-left: 500px;
+     margin-bottom: auto;
+ }
+ .top p{
+     font-size: 30px;
+     text-align: left;
+     margin-left: 500px;
+ }
+ .top::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 109.5%;
+     height: 63.55%;
+     background-color: rgba(0, 0, 0, 0.5); 
+ }
+ 
+ .first-section{
+     position: relative;
+     z-index: 2;
+ }
+ button{
+     background-color: white;
+     color: black;
+     border: 2px solid #04AA6D;
+     border-radius: 12px;
+     padding: 14px 40px;
+     margin: 15px;
+     margin-bottom: 30px;
+ }
+ button:hover{
+     background-color: #04AA6D;
+     color: white;
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50),0 17px 50px 0 rgba(0,0,0,0.50);
+ }
+ 
+ main{
+     margin-top: 60px;
+ }
+ .free-course{
+     display: flex;
+     float: left;
+     width: 103.5%;
+     padding: 50px;
+     margin-top: 70px;
+     background-image: linear-gradient(to bottom, black, rgb(1, 51, 6));
+     margin-top: 0px;
+     color: white;
+     text-decoration: none;
+ }
+ .free-course img{
+     margin: 200px;
+     margin-top: 5cqh;
+     box-shadow: 20px 20px 5px whitesmoke;
+ }
+ .free-content{
+    margin: 100px;
+    margin-top: 100px;
+    border: solid, rgb(152, 250, 189), 15px;
+    padding: 30px,100px;
+ }
+ .free-content a{
+     color: white;
+ }
+ .free h1{
+     font-size: 50px;
+ }
+ .free-content {
+     font-size: 30px;
+ }
+ .free-content a{
+     text-decoration: none;
+ }
+ .free-content:hover{
+     box-shadow: 10px 10px 5px #033214;
+     text-decoration: underline;
+ }
+ .free{
+     box-shadow: 10px 10px 5px #033214;
+     text-decoration: none;
+ }
+ /*.free ::after{
+     content: '';
+     position: relative;
+     width: 6px;
+     height: 100%;
+     top: 0;
+     left: 50%;
+     z-index: -1;
+ }*/
+ .paid-course{
+    padding: 80px;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(1, 51, 6), rgb(3, 109, 13));
+    margin-top: 0px;
+ }
+ .paid-course a{
+     text-decoration: none;
+ }
+ .paid-course h1{
+     font-size: 100px;
+     margin-bottom: 80px;
+     color: white;
+ }
+ .paid{
+     display: flex;
+     flex-direction: row;
+     gap: 80px;
+ }
+ .paid div{
+     border: 7px solid black;
+     border-radius: 5px;
+     background-color: rgba(0, 255, 255, 0.766);
+ }
+ 
+ .paid div:hover{
+     box-shadow: 10px 10px 5px #033214;
+     text-decoration: underline;
+ }
+ .paid h2{
+     font-size: 50px;
+     color: white;
+ }
+ .paid p{
+     font-size: 20px;
+     color: white;
+     text-decoration: none;
+ }
+ .essential{
+     padding: 50px;
+     display: flex;
+     float: left;
+     flex-direction: column;
+     width: 103.5%;
+     margin: 0px;
+     background-image: linear-gradient(to bottom,  rgb(3, 109, 13), rgb(0, 184, 18));
+     color: white;
+ }
+ .essential a{
+     text-decoration: none;
+     color: rgb(104, 153, 169);
+ }
+ .essential h1{
+     font-size: 100px;
+     margin-bottom: 80px;
+ }
+ .equipment{
+     display: flex;
+     flex-direction: row;
+     gap: 70px;
+ }
+ .equipment div{
+     border: 8px solid  rgb(152, 250, 189);
+     border-radius: 5px;
+     background-color: white;
+ }
+ .equipment div:hover{
+     box-shadow: 10px 10px 5px #033214;
+     text-decoration: underline;
+ }
+ .precision{
+     padding: 80px;
+     display: flex;
+     float: left;
+     flex-direction: column;
+     width: 100%;
+     margin: 0px;
+     background-image: linear-gradient(to bottom, rgb(0, 184, 18), rgb(91, 247, 107));
+     color: whitesmoke;
+ }
+ .precision h1{
+     font-size: 100px;
+     margin-bottom: 80px;
+ }
+ .technologies{
+     display: flex;
+     flex-direction: row;
+     gap: 70px;
+ }
+ .technologies div{
+     border: 1px solid black;
+     border-radius: 5px;
+     background-color: whitesmoke;
+ }
+ .technologies a{
+     text-decoration: none;
+     color: rgb(104, 153, 169);
+ }
+ .technologies div:hover{
+     box-shadow: 10px 10px 5px #033214;
+     text-decoration: underline;
+ }
+ .technologies img{
+     float: left;
+ }
+ .technologies h2{
+     font-size: 50px;
+ }
+ .technologies p{
+     font-size: 30px;
+ }
+ .sustainable{
+     padding: 80px;
+     display: flex;
+     float: left;
+     flex-direction: column;
+     width: 100%;
+     margin: 0px;
+     background-image: linear-gradient(to bottom, rgb(91, 247, 107), rgb(211, 243, 214));
+     color: rgb(123, 123, 111);
+ }
+ .sustainable h1{
+     font-size: 100px;
+     margin-bottom: 80px;
+ }
+ .practices{
+     display: flex;
+     flex-direction: row;
+     gap: 70px;
+ }
+ .practices div{
+     border: 2px solid black;
+     border-radius: 5px;
+     background-color: whitesmoke;
+ }
+ .practices a{
+     text-decoration: none;
+     color: rgb(104, 153, 169);
+ }
+ .practices div:hover{
+     box-shadow: 10px 10px 5px #033214;
+     text-decoration: underline;
+ }
+ .practices img{
+     float: left;
+ }
+ .practices h2{
+     font-size: 50px;
+ }
+ .practices p{
+     font-size: 30px;
+ }
+ .organic{
+     padding: 80px;
+     display: flex;
+     float: left;
+     flex-direction: row;
+     width: 100%;
+     margin: 0px;
+     background-image: linear-gradient(to bottom, rgb(211, 243, 214),  rgb(255, 255, 255));
+     color: rgb(42, 98, 150);
+ }
+ .gardening{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+ .gardening h1{
+     font-size: 80px;
+     text-decoration: none;
+     margin-bottom: 80px;
+ }
+ .gardening a{
+     font-size: 30px;
+     text-decoration: none;
+ }
+ .gardening a:hover{
+     font-size: 45px;
+     text-decoration: solid;
+     text-shadow: 2px 2px 4px #000000;
+ }
+ .connect{
+     padding: 80px;
+     display: flex;
+     float: left;
+     flex-direction: column;
+     width: 100%;
+     margin: 0px;
+     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(211, 243, 214));
+     color: rgb(42, 98, 150);
+ }
+ .connect h1{
+     font-size: 100px;
+     margin-bottom: 80px;
+ }
+ .community{
+     display: flex;
+     flex-direction: row;
+ }
+ .community div{
+     border: 1px solid black;
+     border-radius: 5px;
+     background-color: whitesmoke;
+ }
+ .community a{
+     text-decoration: none;
+     color: rgb(104, 153, 169);
+ }
+ .community div:hover{
+     box-shadow: 10px 10px 5px #033214;
+     text-decoration: underline;
+ }
+ .community img{
+     float: top;
+ }
+ .community img:hover{}
+ .community h2{
+     font-size: 50px;
+ }
+ .community p{
+     font-size: 30px;
+ }
+ .explore{
+     padding: 80px;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     margin: 0px;
+     background-image: linear-gradient(to bottom, rgb(211, 243, 214),rgb(91, 247, 107));
+     color: rgb(123, 123, 111);
+ }
+ .explore h1{
+     font-size: 100px;
+     margin-bottom: 80px;
+ }
+ table{
+     border: 2px solid #000000;
+     width: 100%;
+ }
+ td{
+     border: 1px solid #000000;
+     padding: 60px;
+ }
+ td a{
+     font-size: 30px;
+     text-decoration: none;
+     color: black;
+     margin-left: 65px;
+ }
+ .firstrow{
+     background-color: rgba(127, 255, 212, 0.745);
+ }
+ td a:hover{
+     font-size: 32px;
+     text-decoration: solid;
+     text-shadow: 2px 2px 4px #000000;
+ }
+ .aboutus{
+     padding: 80px;
+     display: flex;
+     float: left;
+     flex-direction: column;
+     width: 100%;
+     margin-top: 0px;
+     background-image: linear-gradient(to bottom, rgb(91, 247, 107), rgb(0, 184, 18));
+     color: whitesmoke;
+ }
+ .aboutus h1{
+     font-size: 100px;
+     margin-bottom: 80x;
+ }
+ .aboutus p{
+     font-size: 25px;
+     color: rgb(83, 63, 63);
+ }
+ .ourvision{
+     padding: 80px;
+     display: flex;
+     float: left;
+     flex-direction: column;
+     width: 100%;
+     margin-top: 0px;
+     background-image: linear-gradient(to bottom, rgb(0, 184, 18),  rgb(3, 109, 13));
+     color: whitesmoke;
+ }
+ .ourvision h1{
+     font-size: 100px;
+     margin-bottom: 80x;
+ }
+ .ourvision p{
+     font-size: 25px;
+     color: rgb(198, 160, 160);
+ }
+ .ourmission{
+     padding: 80px;
+     display: flex;
+     float: left;
+     flex-direction: column;
+     width: 100%;
+     margin-top: 0px;
+     background-image: linear-gradient(to bottom,  rgb(3, 109, 13),  rgb(1, 51, 6));
+     color: whitesmoke;
+ }
+ .ourmission h1{
+     font-size: 100px;
+     margin-bottom: 80x;
+ }
+ .ourmission p{
+     font-size: 25px;
+     color: rgb(198, 160, 160);
+ }
+ footer{
+     padding: 100px;
+     background-color: #36454F;
+ }
+ .icon a{
+     text-decoration: none;
+     padding: 100px;
+ }
+
+ 
+@media only screen and (max-width: 600px) {
+    body, html {
+        font-size: 14px; 
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav a {
+        float: none; 
+        display: block; 
+        padding: 15px; 
+        font-size: 18px; 
+    }
+
+    nav img {
+        float: none; 
+        margin: 10px auto; 
+    }
+
+    .top {
+        background-size: contain; 
+        height: 30vh; 
+        margin-top: 60px; 
+    }
+
+    .top h1 {
+        font-size: 40px; 
+        margin-left: 20px; 
+    }
+
+    .top p {
+        font-size: 18px; 
+        margin-left: 20px; 
+    }
+
+    .free-course img {
+        width: 100%; 
+        margin: 0; 
+        box-shadow: none; 
+    }
+
+    .free-content, .paid-course, .essential, .precision, .sustainable, .explore {
+        padding: 20px; 
+    }
+
+    .free-content, .paid-course, .essential, .precision, .sustainable, .explore, .aboutus, .ourvision, .ourmission {
+        font-size: 16px; 
+    }
+
+    .paid, .equipment, .technologies, .practices, .community {
+        flex-direction: column; 
+    }
+
+    .paid div, .equipment div, .technologies div, .practices div, .community div {
+        width: 100%; 
+    }
+
+    table {
+        border: 1px solid #000; 
+        font-size: 14px;
+    }
+
+    td {
+        padding: 10px; 
+    }
+
+    .community img, .technologies img, .practices img, .organic img {
+        width: 100%; 
+        height: auto;
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    footer {
+        padding: 50px; 
+        font-size: 14px; 
+    }
+
+    .icon a {
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    body, html {
+        font-size: 16px;
+    }
+
+    nav a {
+        float: none; 
+        display: block; 
+        padding: 20px; 
+        font-size: 20px; 
+    }
+
+    nav img {
+        float: none; 
+        margin: 20px auto; 
+    }
+
+    .top {
+        background-size: cover; 
+        height: 40vh;
+    }
+
+    .top h1 {
+        font-size: 60px;
+        margin-left: 50px; 
+    }
+
+    .top p {
+        font-size: 24px; 
+        margin-left: 50px; 
+    }
+
+    .free-course img {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+
+    .free-content, .paid-course, .essential, .precision, .sustainable, .explore {
+        padding: 30px;
+    }
+
+    .free-content, .paid-course, .essential, .precision, .sustainable, .explore, .aboutus, .ourvision, .ourmission {
+        font-size: 18px; 
+    }
+
+    .paid, .equipment, .technologies, .practices, .community {
+        flex-direction: column; 
+    }
+
+    .paid div, .equipment div, .technologies div, .practices div, .community div {
+        width: 100%;
+    }
+
+    table {
+        border: 1px solid #000; 
+    }
+
+    td {
+        padding: 15px; 
+    }
+
+    .community img, .technologies img, .practices img, .organic img {
+        width: 100%; 
+        height: auto;
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    footer {
+        padding: 70px; 
+    }
+
+    .icon a {
+        padding: 30px; 
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    body, html {
+        font-size: 18px;
+    }
+
+    nav a {
+        float: right; 
+        display: inline-block; 
+        padding: 25px; 
+        font-size: 22px; 
+    }
+
+    nav img {
+        float: left; 
+        margin: 15px; 
+    }
+
+    .top {
+        height: 45vh;
+    }
+
+    .top h1 {
+        font-size: 70px;
+        margin-left: 100px; 
+    }
+
+    .top p {
+        font-size: 26px; 
+        margin-left: 100px; 
+    }
+
+    .free-course img {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+
+    .free-content, .paid-course, .essential, .precision, .sustainable, .explore {
+        padding: 40px;
+    }
+
+    .free-content, .paid-course, .essential, .precision, .sustainable, .explore, .aboutus, .ourvision, .ourmission {
+        font-size: 20px; 
+    }
+
+    .paid, .equipment, .technologies, .practices, .community {
+        flex-direction: column; 
+    }
+
+    .paid div, .equipment div, .technologies div, .practices div, .community div {
+        width: 100%; 
+    }
+
+    table {
+        border: 1px solid #000; 
+    }
+
+    td {
+        padding: 20px; 
+    }
+
+    .community img, .technologies img, .practices img, .organic img {
+        width: 100%; 
+        height: auto;
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    footer {
+        padding: 90px; 
+    }
+
+    .icon a {
+        padding: 40px; 
+    }
+}
+
+
+@media only screen and (min-width: 993px) {
+    body, html {
+        font-size: 20px; 
+    }
+
+    nav a {
+        float: right; 
+        display: inline-block; 
+        padding: 35px; 
+        font-size: 25px; 
+    }
+
+    nav img {
+        float: left; 
+        margin: 15px; 
+    }
+
+    .top {
+        height: 49vh; 
+    }
+
+    .top h1 {
+        font-size: 80px; 
+        margin-left: 500px; 
+    }
+
+    .top p {
+        font-size: 30px; 
+        margin-left: 500px; 
+    }
+
+    .free-course img {
+        width: auto; 
+        margin: 200px; 
+    }
+
+    .free-content, .paid-course, .essential, .precision, .sustainable, .explore {
+        padding: 50px; 
+    }
+
+    .free-content, .paid-course, .essential, .precision, .sustainable, .explore, .aboutus, .ourvision, .ourmission {
+        font-size: 30px; 
+    }
+
+    .paid, .equipment, .technologies, .practices, .community {
+        flex-direction: row; 
+    }
+
+    .paid div, .equipment div, .technologies div, .practices div, .community div {
+        width: auto; 
+    }
+
+    table {
+        border: 2px solid #000; 
+    }
+
+    td {
+        padding: 30px; 
+    }
+
+    .community img, .technologies img, .practices img, .organic img {
+        width: auto;
+        margin: auto; 
+    }
+
+    footer {
+        padding: 100px; 
+    }
+
+    .icon a {
+        padding: 100px; 
+    }
+}
